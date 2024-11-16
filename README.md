@@ -1,5 +1,7 @@
 #用的是大佬https://github.com/VIKINGYFY/OpenWRT-CI的源码, 增加了几个软件; 
+
 #软件列表:
+
 luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luci-app-autoreboot | luci-app-advancedplus | luci-theme-kucat | shadowsocks-libev-ss-server| luci-app-openclash | luci-app-passwall | luci-app-frpc | luci-app-syncthing | luci-app-zerotier | luci-app-vsftpd | luci-app-acl
 
 有bug, 软件无法安装更新; 不知道如何替换源,可以安装后在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换
