@@ -1,4 +1,4 @@
-#用的是大佬https://github.com/VIKINGYFY/OpenWRT-CI的源码, 增加了几个软件; 
+#用的是大佬 https://github.com/VIKINGYFY/OpenWRT-CI 的源码, 增加了几个软件; 
 
 #软件列表:
 
