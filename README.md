@@ -4,7 +4,7 @@
 
 luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luci-app-autoreboot | luci-app-advancedplus | luci-theme-kucat | shadowsocks-libev-ss-server| luci-app-openclash | luci-app-passwall | luci-app-frpc | luci-app-syncthing | luci-app-zerotier | luci-app-vsftpd | luci-app-acl
 
-有bug, 软件无法安装更新; 不知道如何替换源,可以安装后在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换
+有bug, 软件无法安装更新; 不知道在编释时如何替换源, 解决方法: 安装后在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换:
 
 src/gz openwrt_core https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/targets/x86/64/packages
 
