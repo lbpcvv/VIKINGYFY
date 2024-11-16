@@ -1,11 +1,22 @@
-# OpenWRT-CI
-云编译OpenWRT固件
+#用的是大佬https://github.com/VIKINGYFY/OpenWRT-CI的源码, 增加了几个软件; 
+#软件列表:
+luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luci-app-autoreboot | luci-app-advancedplus | luci-theme-kucat | shadowsocks-libev-ss-server| luci-app-openclash | luci-app-passwall | luci-app-frpc | luci-app-syncthing | luci-app-zerotier | luci-app-vsftpd | luci-app-acl
 
-官方版：
-https://github.com/immortalwrt/immortalwrt.git
+有bug, 软件无法安装更新; 不知道如何替换源,可以安装后在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换
 
-高通版：
-https://github.com/VIKINGYFY/immortalwrt.git
+src/gz openwrt_core https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/targets/x86/64/packages
+
+src/gz openwrt_base https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/base
+
+src/gz openwrt_luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/luci
+
+src/gz openwrt_packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/packages
+
+src/gz openwrt_routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/routing
+
+src/gz openwrt_telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/telephony
+
+
 
 # 固件简要说明：
 
@@ -22,17 +33,3 @@ workflows——自定义CI配置
 Scripts——自定义脚本
 
 Config——自定义配置
-
-如果软件无法安装更新,请在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换
-
-src/gz openwrt_core https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/targets/x86/64/packages
-
-src/gz openwrt_base https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/base
-
-src/gz openwrt_luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/luci
-
-src/gz openwrt_packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/packages
-
-src/gz openwrt_routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/routing
-
-src/gz openwrt_telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/telephony
