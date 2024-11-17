@@ -2,7 +2,7 @@
 
 #软件列表:
 
-luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luci-app-autoreboot | luci-app-advancedplus | luci-theme-kucat | luci-app-ssr-plus | luci-app-openclash | luci-app-passwall | luci-app-frpc | luci-app-syncthing | luci-app-zerotier | luci-app-vsftpd | luci-app-acl
+luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luci-app-autoreboot | luci-app-advancedplus | luci-theme-kucat | luci-app-openclash | luci-app-passwall | luci-app-frpc | luci-app-syncthing | luci-app-zerotier | luci-app-vsftpd | luci-app-acl
 
 有bug, 软件无法安装更新; 不知道在编释时如何替换源, 解决方法: 安装后在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换:
 
