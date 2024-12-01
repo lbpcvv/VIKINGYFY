@@ -6,17 +6,16 @@ luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luc
 
 有bug, 软件无法安装更新; 不知道在编释时如何替换源, 解决方法: 安装后在opkg配置--/etc/opkg/distfeeds.conf 删除原有的用以下替换:
 
-src/gz openwrt_core https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/targets/x86/64/packages
+src/gz openwrt_base https://archive.openwrt.org/releases/packages-23.05/aarch64_cortex-a53/base
 
-src/gz openwrt_base https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/base
+src/gz openwrt_luci https://archive.openwrt.org/releases/packages-23.05/aarch64_cortex-a53/luci
 
-src/gz openwrt_luci https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/luci
+src/gz openwrt_packages https://archive.openwrt.org/releases/packages-23.05/aarch64_cortex-a53/packages
 
-src/gz openwrt_packages https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/packages
+src/gz openwrt_routing https://archive.openwrt.org/releases/packages-23.05/aarch64_cortex-a53/routing
 
-src/gz openwrt_routing https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/routing
+src/gz openwrt_telephony https://archive.openwrt.org/releases/packages-23.05/aarch64_cortex-a53/telephony
 
-src/gz openwrt_telephony https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/23.05.2/packages/aarch64_cortex-a53/telephony
 
 
 
