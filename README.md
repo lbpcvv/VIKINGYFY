@@ -1,11 +1,12 @@
-# OpenWRT-CI
-云编译OpenWRT固件
+#用的是大佬 https://github.com/VIKINGYFY/OpenWRT-CI 的源码, 增加了几个软件; 
 
-官方版：
-https://github.com/immortalwrt/immortalwrt.git
+#软件列表:
 
-高通版：
-https://github.com/VIKINGYFY/immortalwrt.git
+luci-app-samba4 | luci-app-cpufreq | luci-app-wolplus | luci-app-tailscale | luci-app-autoreboot | luci-app-advancedplus | luci-theme-kucat | luci-app-openclash | luci-app-passwall | luci-app-frpc | luci-app-syncthing | luci-app-zerotier | luci-app-vsftpd | luci-app-acl
+
+
+
+
 
 # 固件简要说明：
 
